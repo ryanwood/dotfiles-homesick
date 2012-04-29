@@ -1,0 +1,30 @@
+alias reload="source ~/.zshrc"
+alias startmysql="/usr/local/Cellar/mysql/5.1.48/share/mysql/mysql.server start"
+alias stopmysql="/usr/local/Cellar/mysql/5.1.48/share/mysql/mysql.server stop"
+
+alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias stoppg="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+# Projects
+alias cdp='cd ~/code/prayerthread/prayerthread.org'
+alias cdb='cd ~/code/bellstrike/bellstrike.com'
+alias cdh='cd ~/code/bsi/myhourbank.com'
+
+alias rsd='git push; rake staging deploy'
+
+alias mig='rake db:migrate db:test:clone'
+alias rst='touch tmp/restart.txt'
+
+alias du='du -k -d 1 $argv'
+alias s='git status -sb $argv; return 0'
+alias d='gd $argv'
+alias v='mvim $argv'
+
+alias df='df -kh $argv'
+alias reload_webkit='osascript -e 'tell application "WebKit" to do JavaScript "window.location.reload()" in front document''
+alias tigs='tig status $argv'
+
+alias be='bundle exec'
+
+alias add_alias='mate -w ~/.zsh/aliases; cd ~/.dot-files; ga files/.zsh/aliases; gc'
+alias git_alias='mate -w ~/.zsh/git_aliases; cd ~/.dot-files; ga files/.zsh/git_aliases; gc'

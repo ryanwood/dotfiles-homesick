@@ -1,0 +1,78 @@
+"
+" General Settings
+"
+" set hidden
+
+" GRB: Put useful info in status line
+" set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+" hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
+
+" set winwidth=79
+
+"
+" Folding settings
+"
+
+set foldmethod=syntax   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
+" au WinLeave * set nocursorline " nocursorcolumn
+" au WinEnter * set cursorline " cursorcolumn
+" set cursorline " cursorcolumn
+
+" hi cursorline guibg=#999 " highlight bg color of current line
+" hi CursorColumn guibg=#333333   " highlight cursor
+
+"
+" Mappings
+"
+
+" easy window switching
+map <c-h> <c-w>h
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-x> <c-w>x
+
+" GRB: clear the search buffer when hitting return
+" nnoremap <CR> :nohlsearch<CR>
+nnoremap <CR> :nohlsearch<BAR>:echo<CR><CR>
+
+map <leader>fn :NERDTreeFind<cr>
+map <leader>ff :NERDTreeMirror<cr>
+
+nnoremap <leader><leader> <c-^>
+
+" nmap <space> :
+map <leader>r :Rename 
+
+nmap <leader>kk :%s/ \+$//g<cr>
+nmap <leader>kl :%s/<C-v><C-m>//g<cr>
+" nmap <silent> <leader>kl :%s/ \+$//g<cr><cr>\|:%s/<C-v><C-m>//g<cr><cr>:w<cr>
+
+" "Very magic" regexes in searches
+" nnoremap / /\v
+" nnoremap ? ?\v
+
+map <c-s> :%s/\v
+
+"
+" Un-mappings
+"
+
+" These Janus mapping slow down the ; when searching
+unmap ;l
+unmap ;'
+
+" Taken from Gary Bernhardt
+" https://github.com/garybernhardt/dotfiles/master/.vimrc
+function! PromoteToLet()
+  :normal! dd
+  :normal! P
+  :.s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
+  :normal ==
+endfunction
+:command! PromoteToLet :call PromoteToLet()
+:map <leader>p :PromoteToLet<cr>

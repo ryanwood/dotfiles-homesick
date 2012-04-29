@@ -1,0 +1,12 @@
+colorscheme ir_black
+set guifont=Inconsolata-dz:h12
+
+" Don't beep
+set visualbell
+
+" Start without the toolbar
+set guioptions-=T
+
+" Disable Open Tab menu item, Map to new tab
+macmenu &File.Open\ Tab\.\.\. key=<nop>
+nnoremap <D-T> :tabnew<cr>
