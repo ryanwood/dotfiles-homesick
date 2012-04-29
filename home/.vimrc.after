@@ -58,14 +58,6 @@ nmap <leader>kl :%s/<C-v><C-m>//g<cr>
 
 map <c-s> :%s/\v
 
-"
-" Un-mappings
-"
-
-" These Janus mapping slow down the ; when searching
-unmap ;l
-unmap ;'
-
 " Taken from Gary Bernhardt
 " https://github.com/garybernhardt/dotfiles/master/.vimrc
 function! PromoteToLet()
