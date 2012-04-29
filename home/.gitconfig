@@ -13,3 +13,11 @@
   who = shortlog -s --
 [core]
   editor = vim
+[github]
+	user = ryanwood
+[push]
+  default = current
+[heroku]
+	account = ryanwood
+[format]
+	pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
