@@ -1,3 +1,12 @@
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "home/.janus/vim-slim"]
+	path = home/.janus/vim-slim
+	url = https://github.com/bbommarito/vim-slim.git
+[submodule "home/.janus/vim-ragtag"]
+	path = home/.janus/vim-ragtag
+	url = https://ryanwood@github.com/ryanwood/vim-ragtag.git
+[submodule "home/.janus/vim-buffergator"]
+	path = home/.janus/vim-buffergator
+	url = https://github.com/jeetsukumaran/vim-buffergator.git
