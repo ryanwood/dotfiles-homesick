@@ -32,7 +32,7 @@ unsetopt correct_all
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler brew cake cap cloudapp gem git git-flow github heroku osx pow powder ssh-agent rails rails3 rvm vi-mode)
+plugins=(brew bundler cap gem git git-flow heroku osx powder rails rails3 rvm)
 
 source $ZSH/oh-my-zsh.sh
 
