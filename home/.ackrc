@@ -1,1 +1,6 @@
---type-add=ruby=.haml,.rake,.feature,.sass
+--type-add=ruby=.haml,.rake,.feature,.slim
+--type-add=css=.sass,.scss
+--type-add=js=.coffee
+
+--ignore-dir=coverage
+--ignore-dir=tmp

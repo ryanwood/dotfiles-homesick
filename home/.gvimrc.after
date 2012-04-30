@@ -1,4 +1,4 @@
-colorscheme ir_black
+" colorscheme ir_black
 set guifont=Inconsolata-dz:h14
 
 " Don't beep

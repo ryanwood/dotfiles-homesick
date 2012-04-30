@@ -6,8 +6,8 @@ call janus#disable_plugin('scala')
 call janus#disable_plugin('puppet')
 call janus#disable_plugin('cucumber')
 call janus#disable_plugin('nodejs')
-call janus#disable_plugin('handlebars')
-call janus#disable_plugin('mustache')
+call janus#disable_plugin('snipmate')
+call janus#disable_plugin('snipmate-snippets')
 
 "
 " Plugin Settings

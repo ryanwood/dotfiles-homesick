@@ -32,14 +32,13 @@ unsetopt correct_all
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler cake cap cloudapp gem git git-flow github heroku osx pow powder ssh-agent rails3 vi-mode)
+plugins=(bundler brew cake cap cloudapp gem git git-flow github heroku osx pow powder ssh-agent rails rails3 rvm vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-# /usr/local/bin has priority in PATH
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
 
 . ~/.zsh/prompt
 . ~/.zsh/aliases
@@ -50,6 +49,10 @@ export PATH="/usr/local/bin:$PATH"
 export EDITOR="vim"
 export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
+
+# http://beginrescueend.com/integration/zsh/
+# Fixes ~rvm_rvmrc_cwd in prompt
+unsetopt auto_name_dirs
 
 # Function for persisting SSH agent forwarding in a screen/tmux session after
 # you've logged out and back into the server
