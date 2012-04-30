@@ -24,10 +24,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
-# No corrections because they're obnoxious and most of the time wrong
-unsetopt correct_all
+# COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -53,6 +50,9 @@ export GIT_EDITOR=$EDITOR
 # http://beginrescueend.com/integration/zsh/
 # Fixes ~rvm_rvmrc_cwd in prompt
 unsetopt auto_name_dirs
+
+# No corrections because they're obnoxious and most of the time wrong
+unsetopt correct_all
 
 # Function for persisting SSH agent forwarding in a screen/tmux session after
 # you've logged out and back into the server

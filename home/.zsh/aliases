@@ -8,7 +8,7 @@ alias stoppg="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # Projects
 alias cdp='cd ~/code/prayerthread/prayerthread.org'
 alias cdb='cd ~/code/bellstrike/bellstrike.com'
-alias cdh='cd ~/code/bsi/myhourbank.com'
+alias cdm='cd ~/code/moonclerk/moonclerk.com'
 
 alias rsd='git push; rake staging deploy'
 
