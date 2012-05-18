@@ -47,6 +47,8 @@ export EDITOR="vim"
 export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
 
+export BUNDLER_EDITOR="mvim"
+
 # http://beginrescueend.com/integration/zsh/
 # Fixes ~rvm_rvmrc_cwd in prompt
 unsetopt auto_name_dirs
