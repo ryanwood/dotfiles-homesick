@@ -8,6 +8,7 @@ call janus#disable_plugin('cucumber')
 call janus#disable_plugin('nodejs')
 call janus#disable_plugin('snipmate')
 call janus#disable_plugin('snipmate-snippets')
+call janus#disable_plugin('nerdcommenter')
 
 "
 " Plugin Settings
