@@ -45,6 +45,7 @@ nnoremap <CR> :nohlsearch<BAR>:echo<CR><CR>
 map <leader>fn :NERDTreeFind<cr>
 map <leader>ff :NERDTreeMirror<cr>
 
+" Toggle to last file used
 nnoremap <leader><leader> <c-^>
 
 " nmap <space> :
@@ -70,3 +71,13 @@ function! PromoteToLet()
 endfunction
 :command! PromoteToLet :call PromoteToLet()
 :map <leader>p :PromoteToLet<cr>
+
+" HashRocket
+imap <c-l> <space>=><space>
+
+" Simple comments for tComment
+map <leader>c <c-_><c-_>
+map <d-/> <c-_><c-_>
+
+" Map space to :
+nmap <space> :
