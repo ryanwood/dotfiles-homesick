@@ -76,8 +76,25 @@ endfunction
 imap <c-l> <space>=><space>
 
 " Simple comments for tComment
-map <leader>c <c-_><c-_>
-map <d-/> <c-_><c-_>
+map <D-/> :TComment<cr>
+imap <D-/> <esc>:TComment<cr>i
 
 " Map space to :
 nmap <space> :
+
+" Alternate ESC key
+imap <s-cr> <esc>
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
+
+call tcomment#DefineType('slim', '/ %s')
+call tcomment#DefineType('skim', '/ %s')
+au BufNewFile,BufRead *.skim set filetype=slim
+
